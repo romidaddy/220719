@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+        position: relative;
+      }
+      .chile {
+        height: 120px;
+        width: 130px;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 20%;
+        position: absolute;
+        /* top: 0px; */
+        /* bottom: 0px; */
+        /* left: 0px; */
+        right: -10px;
+        justify-content: center;
+      }
+      .a {
+        background-image: url("./images/다운로드.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 10px;
+        top: 10px;
+      }
+      .b {
+        background-image: url("./images/다운로드\ \(1\).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 159px;
+        top: 10px;
+      }
+      .c {
+        background-image: url("./images/다운로드\ \(2\).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: 10px;
+        left: 10px;
+      }
+      .d {
+        background-image: url("./images/다운로드\ \(3\).jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: 10px;
+        left: 159px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="chile a"></div>
+      <div class="chile b"></div>
+      <div class="chile c"></div>
+      <div class="chile d"></div>
+    </div>
+  </body>
+</html>

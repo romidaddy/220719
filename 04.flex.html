@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row; */
+            background-color: black;
+            height: 300px;
+            /* align-items: center; + justify-content: center; ->정 중앙 배치 */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* 꽉 채우고 넘김 flex-wrap: wrap; */
+            
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid blue;
+            background-color: red;
+        }
+        .a{
+            /* flex: 1; -> 비율 (레이아웃 짤 수 있음.) */
+            flex: 1;
+            background-color: red;
+        }
+        .b{
+            flex: 3;
+            background-color: green;
+        }
+        .c{
+            flex: 2;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- .wrapper>.box*3 -->
+    <div class="wrapper">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+    </div>
+</body>
+</html>

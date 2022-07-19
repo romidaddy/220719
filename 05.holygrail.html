@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row; */
+            border: 1px solid black;
+            height: 300px;
+            /* align-items: center; + justify-content: center; ->정 중앙 배치 */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* 꽉 채우고 넘김 flex-wrap: wrap; */
+            
+        }
+        .box{
+            width: 100%;
+            height: 250px;
+            border: 1px solid black;
+            
+        }
+        .boxx{
+            width: 100%;
+            height: 250px;
+            border: 1px solid black;
+            
+        }
+        .a{
+            /* flex: 1; -> 비율 (레이아웃 짤 수 있음.) */
+            flex: 1;
+            
+        }
+        .b{
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+        }
+        .c{
+            flex: 1;
+            
+        }
+        .d{
+            flex: 1;
+            
+        }
+        .e{
+            flex: 1;
+            
+        }
+        .f{
+            flex: 15;
+            
+        }
+        .g{
+            flex: 1;
+   
+        }
+    </style>
+</head>
+<body>
+    <!-- .wrapper>.box*3 -->
+    <div class="wrapper">
+        <div class="box a">nav</div>
+        <div class="box b">
+            <div class="boxx d">section</div>
+            <div class="boxx e">header</div>
+            <div class="boxx f">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi animi nobis quaerat fugiat magnam quasi quo consequatur voluptate incidunt, quis totam nisi ea modi, error facilis culpa sint reiciendis saepe.
+            Labore, dolorem omnis odit alias praesentium sunt ad aut fugiat ex repudiandae? Optio quaerat ratione enim impedit eaque repellendus maxime voluptatum, ab, a molestiae tenetur eligendi. Quia quidem delectus quae.
+            Sapiente architecto alias nisi nemo molestias sit expedita amet beatae optio praesentium explicabo hic vel ad incidunt adipisci sed magni ullam perferendis nesciunt molestiae perspiciatis, dolore earum eos debitis. Atque.</div>
+            <div class="boxx g">footer</div>
+        </div>
+        <div class="box c">aside</div>
+    </div>
+</body>
+</html>

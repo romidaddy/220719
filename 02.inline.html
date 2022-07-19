@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .h1-test, .link-test{
+            border: 10px solid blue;
+        }
+        .link-test{
+            /* inline으로 되어있는 a태그를 강제로 크기 변경 */
+            display: inline-block;
+            /* a태그가 inline이어서 크기 조정 불가능!! */
+            height: 100px;
+        }
+        .h1-test{
+            /* display: none; 강제로 안보이게 하기 (ex 버튼을 누르면 출력되게 하기위해) */
+            height: 50px;
+        }
+        button{
+            border: 10px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline은 줄바꿈이 일어나지않는다!!
+    inline은 크기조정 불가능!! inline의 대표적으로는 a태그 
+    inline은 margin설정이 안된다.-->
+    <a class="link-test" href="">fffffffffff</a>
+    <a class="link-test" href="">fffff</a>
+
+    <!-- h1는 크기변경 가능 inline이 아니다! -> 블록이다!! -->
+    <h1 class="h1-test">호호호</h1>
+    <h1 class="h1-test">랄랄라</h1>
+     <!-- button은 liline의 요소 (나를 클릭해 부분만 터치가능)와
+    블록의 요소 크기변경 둘다 가능한 inline-block이다. -->
+    <button>나를 클릭해~~~~</button>
+</body>
+</html>
